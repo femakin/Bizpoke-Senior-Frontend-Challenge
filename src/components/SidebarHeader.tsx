@@ -1,12 +1,18 @@
 import React from "react";
 import SideIcons from "../data";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function SidebarHeader() {
     const navigate = useNavigate();
+    const location = useLocation();
 
     const handleMenuClick = (selected: { name: string; path: string }) => {
         navigate(`${selected.path}`);
+    };
+
+
+    const isActive = (item: any,) => {
+        return item.path === location.pathname;
     };
 
     return (
@@ -22,11 +28,15 @@ function SidebarHeader() {
                     >
                         {item.icon &&
                             React.cloneElement(item.icon, {
-                                style: { color: "#61616a" },
+                                style: {
+                                    color: isActive(item) ? "#ddffbd" : "#61616a",
+                                },
                             })}{" "}
-                        <span className="font-robo text-[12px] text-biz-sidetextcolor">
+
+                        <span className={`font-robo text-[12px] ${isActive(item) ? ' text-biz-sidemenuhovercolor ' : 'text-biz-sidetextcolor'} `}>
                             {item.name}
                         </span>
+
                     </li>
                 ))}
             </ul>

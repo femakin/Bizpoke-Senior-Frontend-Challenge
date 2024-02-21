@@ -20,31 +20,31 @@ const Upper_SideIcons: Icon[] = [
         name: "Dashboard",
         icon: <BiSolidDashboard />,
         iconactive: <BiSolidDashboard />,
-        path: "/dashboard"
+        path: "/"
     },
     {
         name: "Revenue Analytics",
         icon: <TbChartHistogram />,
         iconactive: <TbChartHistogram />,
-        path: "/rentals"
+        path: ""
     },
     {
         name: "Journey",
         icon: <IoBookOutline />,
         iconactive: <IoBookOutline />,
-        path: "/properties"
+        path: ""
     },
     {
         name: "Performance",
         icon: <RiSpeedUpFill />,
         iconactive: <RiSpeedUpFill />,
-        path: "/transactions"
+        path: ""
     },
     {
         name: "Data Platform",
         icon: <GoDatabase />,
         iconactive: <GoDatabase />,
-        path: "/profile"
+        path: ""
     },
 ];
 
@@ -53,13 +53,13 @@ const Lower_SideIcons: Icon[] = [
         name: "Settings",
         icon: <IoSettingsOutline />,
         iconactive: <IoSettingsOutline />,
-        path: "/dashboard"
+        path: ""
     },
     {
         name: "Help",
         icon: <PiChatsBold />,
         iconactive: <PiChatsBold />,
-        path: "/rentals"
+        path: ""
     }
 ];
 

@@ -22,7 +22,8 @@ module.exports = {
           mainbg: '#ffffff',
           sidetextcolor: '#61616a',
           sidemenuhovercolor: '#c2cfbb',
-          bottomnamecolor: '#5f6168'
+          bottomnamecolor: '#5f6168',
+          blackcolor: '#18171e'
           // inactivebuttons: '#F0F0EE',
           // whitebg: '#FFFEFB',
           // accent: '#D3E0E6',

@@ -27,7 +27,7 @@ function Layout({ children }: LayoutProps) {
                 className={`bg-biz-sidebg hidden w-[250px] md:block p-6 border-r-2 border-[#DEDEDE] relative`}
             >
                 <header className="flex mb-8">
-                    <h1 className="font-robo text-white text-font-bold">Company</h1>
+                    <h1 className="font-robo text-white text-xl font-bold">Company</h1>
                 </header>
 
                 <SidebarHeader />
@@ -50,7 +50,7 @@ function Layout({ children }: LayoutProps) {
                         onClick={toggleSidebar}
                     >
                         <header className="flex mb-8">
-                            <h1 className="font-robo text-white text-font-bold">Company</h1>
+                            <h1 className="font-robo text-white text-xl font-bold">Company</h1>
                         </header>
 
                         <SidebarHeader />

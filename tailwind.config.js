@@ -23,7 +23,10 @@ module.exports = {
           sidetextcolor: '#61616a',
           sidemenuhovercolor: '#c2cfbb',
           bottomnamecolor: '#5f6168',
-          blackcolor: '#18171e'
+          blackcolor: '#18171e',
+          dashboardmetriccolor: '#737373',
+          dashboardmetrictitle: '#242e25'
+
           // inactivebuttons: '#F0F0EE',
           // whitebg: '#FFFEFB',
           // accent: '#D3E0E6',

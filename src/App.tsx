@@ -1,4 +1,5 @@
 // import React, { lazy, Suspense } from 'react';
+import Cards from './components/Cards';
 import Layout from './components/Layout';
 import Topbar from './components/Topbar';
 
@@ -13,6 +14,8 @@ function App() {
         <main>
 
           <Topbar />
+
+          <Cards />
 
         </main>
       </Layout>

@@ -1,23 +1,3 @@
-// import { AiOutlineMore } from 'react-icons/ai'
-// import { FaRegUserCircle } from 'react-icons/fa'
-
-// function Logout() {
-//     return (
-//         <nav className="mt-8 flex justify-between items-center">
-//             <div className='flex items-center gap-1 mr-8'>
-//                 <FaRegUserCircle size={20} className='text-white' />
-//                 <span className='font-robo text-sm text-white'>Bolu Adebayo</span>
-//             </div>
-
-//             <button aria-label="More options" className="focus:outline-none" title="More options">
-//                 <AiOutlineMore className='text-white' />
-//             </button>
-//         </nav>
-//     )
-// }
-
-// export default Logout
-
 
 import { AiOutlineMore } from 'react-icons/ai';
 import { FaRegUserCircle } from 'react-icons/fa';

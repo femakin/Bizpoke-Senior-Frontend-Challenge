@@ -35,21 +35,10 @@ function Cards(): JSX.Element {
     const transformedData: Metric[] = transformMetricData(data);
 
     return (
-        // <section className='p-6 border border-2-gray ' style={{
-        //     background: 'conic-gradient(from 240deg at 50% 20%, #e8fedd, #e3fed0, #dffdc4, #defdb7)',
-        //     borderRadius: '8px',
-        //     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-        // }}>
 
-        //     {transformedData.map((metric: Metric) => (
-        //         <Card key={metric.title} title={metric.title} count={metric.count} changePercentage={metric.changePercentage} />
-
-        //     ))}
-        // </section>
-
-        <section className='border border-2-gray '>
+        <section className='  block 2xl:flex xl:flex md:block lg:flex flex-wrap  flex-1  h-24'>
             {transformedData.map((metric, index) => (
-                <Card className='mb-6 p-6 ' index={index}
+                <Card className=' p-6 sm:w-auto w-auto xl:w-72 2xl:w-72  lg:w-72 h-42' index={index}
                     key={metric.title}
                     title={metric.title}
                     count={metric.count}

@@ -26,7 +26,7 @@ function Layout({ children }: LayoutProps) {
             <section
                 className={`bg-biz-sidebg hidden w-[250px] md:block p-6 border-r-2 border-[#DEDEDE] relative`}
             >
-                <header className="flex mb-8">
+                <header className="flex mb-12">
                     <h1 className="font-robo text-white text-xl font-bold">Company</h1>
                 </header>
 

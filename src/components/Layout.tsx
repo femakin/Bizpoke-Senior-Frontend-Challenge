@@ -22,7 +22,7 @@ function Layout({ children }: LayoutProps) {
     };
 
     return (
-        <main className="flex">
+        <main className="flex ">
             <section
                 className={`bg-biz-sidebg hidden w-[250px] md:block p-6 border-r-2 border-[#DEDEDE] relative`}
             >
@@ -61,7 +61,9 @@ function Layout({ children }: LayoutProps) {
                     </div>
                 )}
 
-                <main className="p-6 h-[calc(100vh)]">{children}</main>
+                {/* <main className="p-6 h-[calc(100vh)]">{children}</main> */}
+                <main className="p-6 h-screen overflow-y-auto" >{children}</main>
+                {/* <main className="p-6 sm:h-[calc(100vh-80px)] md:h-[calc(100vh-60px)] h-[calc(100vh)]">{children}</main> */}
             </section>
         </main>
     );

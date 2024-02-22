@@ -34,7 +34,8 @@ const DealsandRevenue = () => {
         },
         stroke: {
             curve: 'monotoneCubic',
-            colors: ['#8896bb', '#e5d4ef']
+            colors: ['#8896bb', '#e5d4ef'],
+            width: 1.5
         },
         fill: {
             type: 'light',
@@ -45,11 +46,7 @@ const DealsandRevenue = () => {
                 title: {
                     text: '',
                 },
-                // labels: {
-                //     formatter: function (value) {
-                //         return '$' + value;
-                //     }
-                // }
+
             },
             {
                 opposite: true,
@@ -61,8 +58,7 @@ const DealsandRevenue = () => {
                         return '$' + value;
                     }
                 },
-                // min: 2,
-                // max: 5
+
             },
         ],
         markers: {

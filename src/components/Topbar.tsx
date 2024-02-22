@@ -3,7 +3,7 @@ import { FaSearch } from 'react-icons/fa';
 
 function Topbar() {
     return (
-        <header className='flex items-center justify-between flex-wrap' >
+        <header className='lg:mt-0 xl:mt-0 2xl:mt-0 md:  mt-[20px]  flex items-center justify-between flex-wrap' >
 
             <h1 className="font-robo text-biz-blackcolor text-xl font-bold">
                 Dashboard

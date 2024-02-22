@@ -36,9 +36,9 @@ function Layout({ children }: LayoutProps) {
                 </footer>
             </section>
 
-            <section className={`w-full ${showSidebar ? "ml-0" : "ml-1/12"} md:ml-0`}>
+            <section className={`w-full  ${showSidebar ? "ml-0" : "ml-1/12"} md:ml-0`}>
                 <button
-                    className="md:hidden absolute z-[2] right-0 p-4 text-dark"
+                    className=" md:hidden absolute z-[2] right-0 p-4 text-dark  "
                     onClick={toggleSidebar}
                 >
                     ☰
@@ -46,7 +46,7 @@ function Layout({ children }: LayoutProps) {
 
                 {showSidebar && (
                     <div
-                        className="z-10 md:hidden fixed top-0 left-0 h-full w-[250px] bg-biz-sidebg p-4 border-r-2 border-[#DEDEDE]"
+                        className="  z-10 md:hidden fixed top-0 left-0 h-full w-[250px] bg-biz-sidebg p-4 border-r-2 border-[#DEDEDE]"
                         onClick={toggleSidebar}
                     >
                         <header className="flex mb-8">

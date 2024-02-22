@@ -203,24 +203,30 @@ const DealsandRevenue = () => {
 
 const App = () => {
     return (
-        <div className='lg:w-[35%]   w-6/12 p-4 flex flex-col flex-wrap '>
-            <header className="flex justify-between">
-                <h1 className="  font-robo text-biz-blackcolor text-lg font-bold">Deals & Revenue</h1>
-                <nav>
-                    <ul className="flex items-center gap-2">
-                        <li className="flex items-center" >
-                            <div><GoDotFill color='#8896bb' /></div>
-                            <p className="text-sm text-[#474848]" >Deals</p>
-                        </li>
-                        <li className="flex items-center" >
-                            <div ><GoDotFill color="#e5d4ef" /></div>
-                            <p className="text-sm text-[#474848]">Revenue</p>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <DealsandRevenue />
+
+        // <div className='flex flex-wrap w-full'>
+        <div className=''>
+            <section className='w-full lg:w-full flex flex-col flex-wrap p-4'>
+                <header className="flex justify-between">
+                    <h1 className="font-robo text-biz-blackcolor text-lg font-bold">Deals & Revenue</h1>
+                    <nav>
+                        <ul className="flex items-center gap-2">
+                            <li className="flex items-center">
+                                <div><GoDotFill color='#8896bb' /></div>
+                                <p className="text-sm text-[#474848]">Deals</p>
+                            </li>
+                            <li className="flex items-center">
+                                <div><GoDotFill color="#e5d4ef" /></div>
+                                <p className="text-sm text-[#474848]">Revenue</p>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <DealsandRevenue />
+            </section>
+
         </div>
+
     );
 };
 

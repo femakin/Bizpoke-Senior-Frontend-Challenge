@@ -4,9 +4,6 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {
-  // useQuery,
-  // useMutation,
-  // useQueryClient,
   QueryClient,
   QueryClientProvider,
 } from 'react-query'

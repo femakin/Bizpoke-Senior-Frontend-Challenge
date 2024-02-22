@@ -4,6 +4,7 @@ import { FaPlus } from 'react-icons/fa';
 import transformMetricData from '../utils/Transform';
 import { useMetricsData } from '../hooks/useMetricsData';
 import formatTitle from '../utils/FormatTilte'
+import formatNumber from '../utils/Formatnumber'
 
 
 interface Metric {
@@ -37,12 +38,14 @@ function Cards(): JSX.Element {
     return (
         <section className='flex flex-wrap'>
             {transformedData.map((metric, index) => (
+
+
                 <Card
                     className='  p-4 border w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2'
                     index={index}
                     key={metric.title}
                     title={metric.title}
-                    count={metric.count}
+                    count={formatNumber(metric.count)}
                     changePercentage={metric.changePercentage}
                     style={{
                         background: index === 0 ? 'conic-gradient(from 240deg at 50% 20%, #e8fedd, #e3fed0, #dffdc4, #defdb7)' : 'white',

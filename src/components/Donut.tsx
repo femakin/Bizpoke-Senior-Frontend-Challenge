@@ -64,8 +64,9 @@ export default function Donut() {
     return (
         <div>
             <Doughnut data={data}
-                height="250px"
+                height="260px"
                 width="100px"
+                // className='w-full'
                 options={{
                     maintainAspectRatio: false,
 

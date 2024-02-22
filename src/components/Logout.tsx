@@ -4,8 +4,7 @@ import { FaRegUserCircle } from 'react-icons/fa';
 
 function Logout() {
     const handleLogout = () => {
-        // Implement your logout logic here, e.g., clearing user session, redirecting to login page
-        console.log('Logout triggered'); // Replace with actual logout actions
+        console.log('Logout triggered');
     };
 
     return (
@@ -14,15 +13,15 @@ function Logout() {
                 <FaRegUserCircle
                     size={20}
                     className="text-white"
-                    aria-label="User icon" // Added aria-label for accessibility
+                    aria-label="User icon"
                 />
                 <span className="font-robo text-sm text-white">Bolu Adebayo</span>
             </div>
 
             <button
-                aria-label="Logout" // Updated aria-label for clarity
+                aria-label="Logout"
                 className="focus:outline-none"
-                onClick={handleLogout} // Added click handler
+                onClick={handleLogout}
             >
                 <AiOutlineMore className="text-white" />
             </button>

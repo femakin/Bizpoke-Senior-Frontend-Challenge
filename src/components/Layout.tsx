@@ -63,7 +63,6 @@ function Layout({ children }: LayoutProps) {
 
                 {/* <main className="p-6 h-[calc(100vh)]">{children}</main> */}
                 <main className="p-6 h-screen overflow-y-auto" >{children}</main>
-                {/* <main className="p-6 sm:h-[calc(100vh-80px)] md:h-[calc(100vh-60px)] h-[calc(100vh)]">{children}</main> */}
             </section>
         </main>
     );

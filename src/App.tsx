@@ -1,16 +1,16 @@
 import Layout from './components/Layout';
 import MetricsRevenue from './components/MetricsRevenue';
-import Table from './components/Table';
+import TableandDonut from './components/TableandDonut';
 import Topbar from './components/Topbar';
 
 function App() {
   return (
-    <div className="">
+    <div >
       <Layout>
         <main>
           <Topbar />
           <MetricsRevenue />
-          <Table />
+          <TableandDonut />
         </main>
       </Layout>
     </div>

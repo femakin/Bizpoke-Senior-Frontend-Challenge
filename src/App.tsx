@@ -1,6 +1,6 @@
-// import React, { lazy, Suspense } from 'react';
 import Layout from './components/Layout';
 import MetricsRevenue from './components/MetricsRevenue';
+import Table from './components/Table';
 import Topbar from './components/Topbar';
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
         <main>
           <Topbar />
           <MetricsRevenue />
+          <Table />
         </main>
       </Layout>
     </div>

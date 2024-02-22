@@ -38,7 +38,7 @@ function Cards(): JSX.Element {
         <section className='flex flex-wrap'>
             {transformedData.map((metric, index) => (
                 <Card
-                    className='p-6 border w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2'
+                    className='  p-4 border w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2'
                     index={index}
                     key={metric.title}
                     title={metric.title}
@@ -61,7 +61,7 @@ const Card: React.FC<CardProps> = ({ title, count, changePercentage, style, clas
     return (
         <div className={className} style={style}>
 
-            <header className='flex justify-between mb-6'>
+            <header className='flex justify-between mb-4'>
 
                 <h2 className=' text-biz-bashboardmetriccolor font-robo' >{formatTitle(title)}</h2>
                 <button aria-label='More options' className='text-black'>
@@ -70,7 +70,7 @@ const Card: React.FC<CardProps> = ({ title, count, changePercentage, style, clas
 
             </header>
 
-            <div className='-1'>
+            <div className=''>
                 <p className='mb-2 font-bold font-robo text-biz-dashboardmetrictitle text-xl'>{count.toLocaleString()}</p>
                 <span className={`text-sm ${index === 0 ? 'text-[#b0caa2]' : ' text-biz-sidemenuhovercolor'}   font-bold p-0.5  flex items-center  rounded-full ${index === 0 ? 'bg-white' : 'bg-[#effed6]'}   p w-12`} >
                     <FaPlus size={8} color='#cde5b4' />

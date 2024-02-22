@@ -78,7 +78,11 @@ const DealsandRevenue = () => {
                     }
                     return y;
                 }
+            },
+            marker: {
+                fillColors: ['#8896bb', '#e5d4ef']
             }
+
         },
         legend: {
             width: 400,
@@ -99,14 +103,14 @@ const DealsandRevenue = () => {
         ],
     };
 
-    return <ReactApexChart options={chartData} series={chartData.series} type="line" height={250} />;
+    return <ReactApexChart options={chartData} series={chartData.series} type="line" height={220} />;
 };
 
 const App = () => {
     return (
         <div className=''>
-            <section className='w-full lg:w-full flex flex-col flex-wrap p-4'>
-                <header className="flex justify-between">
+            <section className='w-full lg:w-full flex flex-col flex-wrap '>
+                <header className=" pr-4 pl-4 pt-4 flex justify-between">
                     <h1 className="font-robo text-biz-blackcolor text-lg font-bold">Deals & Revenue</h1>
                     <nav>
                         <ul className="flex items-center gap-2">

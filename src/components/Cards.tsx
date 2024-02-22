@@ -37,7 +37,7 @@ function Cards(): JSX.Element {
     return (
 
         // <section className='  block 2xl:flex xl:flex md:block lg:flex flex-wrap  flex-1 '>
-        <section className='lg:flex-row md:flex-row xl:flex-row 2xl:flex-row flex-col   flex 2xl:w-1/2 md:w-1/2 xl:w-1/2 lg:w-1/2 flex-wrap '>
+        <section className='lg:flex-row md:flex-row xl:flex-row 2xl:flex-row flex-col   flex 2xl:w-1/2 md:w-1/2 xl:w-1/2 lg:w-[65%] flex-wrap '>
             {transformedData.map((metric, index) => (
                 <Card className=' p-6 sm:w-auto border  w-auto xl:w-72 2xl:w-72  lg:w-72 h-42' index={index}
                     key={metric.title}

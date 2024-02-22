@@ -203,7 +203,7 @@ const DealsandRevenue = () => {
 
 const App = () => {
     return (
-        <div className='w-6/12 p-4 flex flex-col flex-wrap '>
+        <div className='lg:w-[35%]   w-6/12 p-4 flex flex-col flex-wrap '>
             <header className="flex justify-between">
                 <h1 className="  font-robo text-biz-blackcolor text-lg font-bold">Deals & Revenue</h1>
                 <nav>

@@ -9,7 +9,6 @@ const DealsandRevenue = () => {
 
     const { data, isLoading, error } = useDealsandRevenueData();
 
-    // Handle loading and error states
     if (isLoading) {
         return <div>Loading data...</div>;
     }

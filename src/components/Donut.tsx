@@ -1,72 +1,80 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
+import { useTopRevenueData } from '../hooks/useCharts';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export const data = {
-    labels: ['Direct', 'Paid', 'Social', 'Other',],
-    datasets: [
-        {
-            label: '',
-            data: [1067.8925, 700, 1067.8925, 1435.785],
-            backgroundColor: [
-                '#dcffbd',
-                '#e4bbff',
-                '#6285f3',
-                '#c6b9ff',
-
-            ],
-            borderColor: [
-                '#dcffbd',
-                '#e4bbff',
-                '#6285f3',
-                '#c6b9ff',
-
-            ],
-            borderWidth: 0.5,
-        },
-
-    ],
-};
-
-
-const sliceThickness = {
-    id: 'sliceThickness',
-    beforeDraw(chart: any) {
-        let sliceThicknessPixel = [100, 85, 90, 85];
-        sliceThicknessPixel.forEach((thickness, index) => {
-            chart.getDatasetMeta(0).data[index].outerRadius = thickness
-        })
-    },
-}
-
-const doughnutLabel = {
-    id: 'doughnutLabel',
-    afterDatasetsDraw(chart: any, args: any, plugins: any) {
-        const { ctx } = chart;
-
-        const centerX = chart.getDatasetMeta(0).data[0].x;
-        const centerY = chart.getDatasetMeta(0).data[0].y;
-
-        ctx.save();
-        ctx.font = ' 18px Roboto';
-        ctx.fillStyle = 'black';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText('$4,271.57', centerX, centerY)
-
-
-    }
-}
-
 
 export default function Donut() {
+
+    const { data, isLoading, error } = useTopRevenueData();
+
+    if (isLoading) return <div>Loading metrics...</div>;
+    if (error) return <div>Error fetching metrics...</div>;
+
+
+    const sliceThickness = {
+        id: 'sliceThickness',
+        beforeDraw(chart: any) {
+            let sliceThicknessPixel = [100, 85, 90, 85];
+            sliceThicknessPixel.forEach((thickness, index) => {
+                chart.getDatasetMeta(0).data[index].outerRadius = thickness
+            })
+        },
+    }
+
+    const doughnutLabel = {
+        id: 'doughnutLabel',
+        afterDatasetsDraw(chart: any, args: any, plugins: any) {
+            const { ctx } = chart;
+
+            const centerX = chart.getDatasetMeta(0).data[0].x;
+            const centerY = chart.getDatasetMeta(0).data[0].y;
+
+            ctx.save();
+            ctx.font = ' 18px Roboto';
+            ctx.fillStyle = 'black';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(`$ ${data.total}`, centerX, centerY)
+
+
+        }
+    }
+
+
+    const data_ = {
+        labels: ['Direct', 'Paid', 'Social', 'Other',],
+        datasets: [
+            {
+                label: '',
+                data: [data.social, data.paid, data.direct, data.other],
+                backgroundColor: [
+                    '#dcffbd',
+                    '#e4bbff',
+                    '#6285f3',
+                    '#c6b9ff',
+
+                ],
+                borderColor: [
+                    '#dcffbd',
+                    '#e4bbff',
+                    '#6285f3',
+                    '#c6b9ff',
+
+                ],
+                borderWidth: 0.5,
+            },
+
+        ],
+    };
+
+
     return (
         <div>
-            <Doughnut data={data}
+            <Doughnut data={data_}
                 height="260px"
                 width="100px"
-                // className='w-full'
                 options={{
                     maintainAspectRatio: false,
 

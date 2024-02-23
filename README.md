@@ -60,6 +60,9 @@ This README provides an overview of the solution I created for the Bizpoke Senio
 
 I successfully completed the Senior Frontend Challenge within the designated time frame. The solution includes building a user interface with React.js and TypeScript, utilizing TailwindCSS for styling, integrating charts for visual representation of business metrics, and managing data fetching with React Query.
 
+![Responsive Check](https://bizpokefolder.s3.amazonaws.com/Screenshot+2024-02-23+at+07.24.56.png)
+
+
 **Tech Stack:**
 
 - [React.js](https://reactjs.org/)
@@ -98,9 +101,6 @@ Efforts were made to maintain code quality by adhering to best practices in term
 
 The implementation closely resembles the provided mockup design. I utilized TailwindCSS for styling to achieve a similar visual appearance while ensuring responsiveness and accessibility.
 
-**Screenshots:**
-
-![Responsive Check](https://bizpokefolder.s3.amazonaws.com/Screenshot+2024-02-23+at+07.24.56.png)
 
 **Additional Notes:**
 

@@ -1,5 +1,5 @@
 import React from "react";
-import SideIcons from "../data";
+import SideIcons from "../constant/data";
 import { useNavigate, useLocation } from 'react-router-dom';
 
 function SidebarHeader() {

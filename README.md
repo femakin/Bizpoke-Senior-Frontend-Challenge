@@ -1,57 +1,3 @@
-<!-- # Senior Frontend Challenge Submission (Femi Akinyemi)
-
-
-This README provides an overview of the solution I created for the Senior Frontend Challenge using React.js, TypeScript, and TailwindCSS.
-
-**Overview:**
-
-[Brief description of the challenge and solution]
-
-**Tech Stack:**
-
-* React.js
-* TypeScript
-* [Chosen CSS framework]
-* [Other relevant tools or libraries]
-
-**Installation:**
-
-1. Clone the repository.
-2. Run `npm install` or `yarn install`.
-3. Start the development server: `npm start` or `yarn start`.
-
-**Usage:**
-
-[Instructions on how to interact with the application]
-
-**Testing:**
-
-[Description of testing practices, if applicable]
-
-**Deployment:**
-
-[Link to deployed application, if applicable]
-
-**Code Quality:**
-
-[Brief explanation of code quality efforts]
-
-**Design Resemblance:**
-
-[Explanation of how you adhered to the mockup design]
-
-**Additional Notes:**
-
-[Any further relevant points]
-
-**Link to Github Repository:**
-
-[Private repository link]
-
-**Feel free to reach out with any questions.** -->
-
-
-
 # Bizpoke Senior Frontend Challenge Submission (Femi Akinyemi, akinfemi46@gmail.com )
 
 This README provides an overview of the solution I created for the Bizpoke Senior Frontend Challenge using React.js, TypeScript, and TailwindCSS.
@@ -68,7 +14,7 @@ I successfully completed the Senior Frontend Challenge within the designated tim
 - [React.js](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/)
-- [AWS S3](https://s3.console.aws.amazon.com/s3/get-started?region=us-east-1&bucketType=general)
+- [AWS Amplify](https://aws.amazon.com/amplify/)
 - [APEXCHARTS.JS](https://apexcharts.com/)
 - [react-chartjs-2](https://www.npmjs.com/package/react-chartjs-2)
 - [React Query](https://react-query.tanstack.com/)
@@ -80,6 +26,17 @@ I successfully completed the Senior Frontend Challenge within the designated tim
 1. Clone the repository.
 2. Run `npm install` or `yarn install`.
 3. Start the development server: `npm start` or `yarn start`.
+
+
+## Setting Up the Environment
+
+To run the application, create a file named `.env` in the project root directory. This file should contain the following line:
+
+```
+REACT_APP_BASE_URL='https://frontend-challenge-api-xpjf.onrender.com'
+```
+
+
 
 **Usage:**
 
@@ -117,3 +74,4 @@ Feel free to reach out with any questions via the following social channels:
 - [Twitter](https://twitter.com/akinyemi_t)
 - [LinkedIn](https://www.linkedin.com/in/femi-akinyemi/)
 
+**Thank you.** -->

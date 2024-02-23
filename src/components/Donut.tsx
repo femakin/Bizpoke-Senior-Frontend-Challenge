@@ -1,6 +1,7 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import { useTopRevenueData } from '../hooks/useCharts';
+import Loading from './Loading';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -9,7 +10,7 @@ export default function Donut() {
 
     const { data, isLoading, error } = useTopRevenueData();
 
-    if (isLoading) return <div>Loading metrics...</div>;
+    if (isLoading) return <Loading />;
     if (error) return <div>Error fetching metrics...</div>;
 
 

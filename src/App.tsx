@@ -1,18 +1,24 @@
-import Layout from './components/Layout';
-import MetricsRevenue from './components/MetricsRevenue';
-import TableandDonut from './components/TableandDonut';
-import Topbar from './components/Topbar';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { Suspense } from "react";
+import Loading from "./components/Loading";
+
+const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 
 function App() {
   return (
-    <div >
-      <Layout>
-        <main>
-          <Topbar />
-          <MetricsRevenue />
-          <TableandDonut />
-        </main>
-      </Layout>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            index
+            element={
+              <Suspense fallback={<Loading />}>
+                <Dashboard />
+              </Suspense>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

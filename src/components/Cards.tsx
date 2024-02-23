@@ -5,6 +5,7 @@ import transformMetricData from '../utils/Transform';
 import { useMetricsData } from '../hooks/useMetricsData';
 import formatTitle from '../utils/FormatTilte'
 import formatNumber from '../utils/Formatnumber'
+import Loading from './Loading';
 
 
 interface Metric {
@@ -29,7 +30,7 @@ function Cards(): JSX.Element {
 
     const { data, isLoading, error } = useMetricsData();
 
-    if (isLoading) return <div>Loading metrics...</div>;
+    if (isLoading) return <Loading />;
     if (error) return <div>Error fetching metrics...</div>;
 
 

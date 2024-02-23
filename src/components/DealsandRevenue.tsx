@@ -2,6 +2,7 @@ import ReactApexChart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
 import { GoDotFill } from "react-icons/go";
 import { useDealsandRevenueData } from "../hooks/useDealsandRevenueData";
+import Loading from "./Loading";
 
 
 
@@ -10,7 +11,7 @@ const DealsandRevenue = () => {
     const { data, isLoading, error } = useDealsandRevenueData();
 
     if (isLoading) {
-        return <div>Loading data...</div>;
+        return <Loading />;
     }
 
     if (error) {

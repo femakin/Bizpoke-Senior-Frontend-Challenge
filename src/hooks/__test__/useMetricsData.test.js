@@ -35,9 +35,6 @@ test('fetches metric data and displays it', async () => {
 
     render(<TestComponent />);
 
-    // expect(screen.getAllByText(/Metric/i)).toHaveLength(2);
-    // expect(screen.getByText(/Metric 1/i)).toBeTruthy();
-    // expect(screen.getByText(/123/i)).toBeTruthy();
 });
 
 const TestComponent = () => {

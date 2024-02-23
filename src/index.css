@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.toCenterOfPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: rgba(217, 216, 216, 0.5);
+}
+
+.loadingSpinner {
+    width: 48px;
+    height: 48px;
+    border: 5px solid rgb(217, 216, 216);
+    border-bottom-color: #151922;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

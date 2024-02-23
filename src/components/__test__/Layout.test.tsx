@@ -1,7 +1,7 @@
 /* eslint-disable testing-library/no-unnecessary-act */
-import { render, screen, act } from '@testing-library/react'; // Import act from @testing-library/react
+import { render, screen, act } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import Layout from '../Layout'; // Import the Layout component
+import Layout from '../Layout';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const MockLayOut = () => {

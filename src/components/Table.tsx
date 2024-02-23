@@ -2,6 +2,7 @@ import { FaSearch } from "react-icons/fa";
 import Donut from "./Donut";
 import { IoIosArrowForward } from "react-icons/io";
 import { useCampaignPerformanceData } from "../hooks/useCampaign";
+import Loading from "./Loading";
 
 function Table() {
 
@@ -18,7 +19,7 @@ function Table() {
 
     const { data, isLoading, error } = useCampaignPerformanceData();
 
-    if (isLoading) return <div>Loading metrics...</div>;
+    if (isLoading) return <Loading />;
     if (error) return <div>Error fetching metrics...</div>;
 
 

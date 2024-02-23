@@ -1,6 +1,6 @@
 # Bizpoke Senior Frontend Challenge Submission (Femi Akinyemi, akinfemi46@gmail.com )
 
-This README provides an overview of the solution I created for the Bizpoke Senior Frontend Challenge using React.js, TypeScript, and TailwindCSS.
+This README provides an overview of the solution I created for the Bizpoke Senior Frontend Challenge [main.d3kgwriefi0feh.amplifyapp.com/](https://main.d3kgwriefi0feh.amplifyapp.com/)  using React.js, TypeScript, and TailwindCSS.
 
 **Overview:**
 
@@ -48,7 +48,7 @@ The application includes unit tests written with React Testing Library to ensure
 
 **Deployment:**
 
-The deployed application can be accessed [bizpokeapp.vercel.app](https://bizpokeapp.vercel.app/) [Replace this with the actual link to your deployed application].
+The deployed application can be accessed [main.d3kgwriefi0feh.amplifyapp.com/](https://main.d3kgwriefi0feh.amplifyapp.com/) 
 
 **Code Quality:**
 

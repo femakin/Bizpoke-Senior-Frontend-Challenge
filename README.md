@@ -66,7 +66,7 @@ I successfully completed the Senior Frontend Challenge within the designated tim
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [AWS S3](https://s3.console.aws.amazon.com/s3/get-started?region=us-east-1&bucketType=general)
-- [apexcharts](https://apexcharts.com/)
+- [APEXCHARTS.JS](https://apexcharts.com/)
 - [react-chartjs-2](https://www.npmjs.com/package/react-chartjs-2)
 - [React Query](https://react-query.tanstack.com/)
 - [React Testing Library](https://testing-library.com/react/)

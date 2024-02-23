@@ -1,6 +1,6 @@
 # Bizpoke Senior Frontend Challenge Submission (Femi Akinyemi, akinfemi46@gmail.com )
 
-This README provides an overview of the solution I created for the Bizpoke Senior Frontend Challenge [main.d3kgwriefi0feh.amplifyapp.com/](https://main.d3kgwriefi0feh.amplifyapp.com/)  using React.js, TypeScript, and TailwindCSS.
+This README provides an overview of the solution I created for the [Bizpoke Senior Frontend Challenge](https://main.d3kgwriefi0feh.amplifyapp.com/)  using React.js, TypeScript, and TailwindCSS.
 
 **Overview:**
 
